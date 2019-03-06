@@ -1,0 +1,114 @@
+
+    body{
+      margin:0px;
+      border:0px;
+      padding: 0px;
+    }
+    .content {
+      grid-area: content;
+      display:grid;
+      height:100%;
+      padding-right:25px;
+      padding-left:25px;
+      padding-bottom:25px;
+      grid-gap:10px;
+      grid-template-areas:
+      "project4 project4"
+      "project4 project4"
+      "project1 project1"
+      "project2 project2"
+      "project3 project3"
+      "project5 project5";
+    }
+
+    .wrapper {
+  display: grid;
+  /*grid-gap: 20px;*/
+  grid-row-gap: 20px;
+  grid-template-areas:
+    "nav nav"
+    "content content"
+    "content content"
+    "content content"
+    "content content"
+    "content content"
+    "content content"
+    "content content"
+    "content content"
+    "content content"
+    "content content"
+    "footer footer";
+    height:100%;
+
+}
+
+.project1{
+   grid-area: project1;
+   background-color: white;
+}
+.project2{
+   grid-area: project2;
+   background-color: white;
+}
+.project3{
+   grid-area: project3;
+   background-color: white;
+}
+.project5{
+   grid-area: project5;
+   background-color: white;
+}
+.project4{
+   grid-area: project4;
+   background-color:#e6fffa;
+
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+
+    grid-template-areas:
+      "nav nav nav"
+      "content content content"
+      "content content content"
+      "content content content"
+      "content content content"
+      "content content content"
+      "content content content"
+      "content content content"
+      "content content content"
+      "content content content"
+      "content content content"
+      "footer footer  footer";
+      height:100%;
+
+   }
+   .content {
+
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+     padding-right:50px;
+     padding-left:50px;
+
+     grid-gap:10px;
+     grid-template-areas:
+     "project1 project2 project3 project5 project4"
+     "project1 project2 project3 project5 project4"
+     "project1 project2 project3 project5 project4"
+     "project1 project2 project3 project5 project4"
+     "project1 project2 project3 project5 project4"
+     "project1 project2 project3 project5 project4"
+     "project1 project2 project3 project5 project4"
+     "project1 project2 project3 project5 project4"
+     "project1 project2 project3 project5 project4";
+   }
+   nav ul {
+     flex-direction: column;
+   }
+   
+   p{
+     text-align: right;;
+     font-size: 25px;
+     padding:0;
+   }
+}
