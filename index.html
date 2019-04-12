@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Dimpho Sethiba</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+ <script>
+	$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+    
+    return false;
+	});
+ </script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #ffffff; /* White */
+    color: #1abc9c;
+    
+  }
+  .bg-2 { 
+  background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-3 { 
+     background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  h3{
+font-size: 30px;
+  font-family: Handlee;
+}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#me">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container <div id="page1">
+  <a id="about" class="smooth"></a>
+    About page content goes here.
+</div>
+
+<div id="page2">
+  <a id="portfolio" class="smooth"></a>
+    Portfolio page content goes here.
+</div>
+
+<div id="page3">
+  <a id="contact" class="smooth"></a>
+    Contact page content goes here.
+</div>-->
+<div id="page1">
+  <a id="me" class="smooth"></a>
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Dimpho Sethiba</h3>
+  <img src="Dimps-02.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="450" height="300">
+  <h3>I am a coding recruit(Web designer & Front‑end developer) at Umuzi Acamedy.</h3>
+</div>
+</div>
+
+<!-- Second Container -->
+<div id="page2">
+ <a id="about" class="smooth"></a>
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">about me</h3>
+  <p>Hi, I am Dimpho.<br/>
+    A coding recruit at Umuzi Academy, specializing in Web design and Front-end development.<br/>
+    I loving creating simple, eye-catching webpages. I’m not afraid of exploring and using the fountain of<br/>
+    colours we have… worry not I have a good eye. And oh… I’m an internet and social media addict, but<br/>
+    that is where I draw my inspiration from!</p>
+  <a href="resume.html" class="btn btn-default btn-lg">
+    <span class=""></span> Resume
+  </a>
+</div>
+</div>
+
+<!-- Third Container (Grid) -->
+<div id="page3">
+  <a id="portfolio" class="smooth"></a>
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">portfolio</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <h4>Banana Rush Game</h4>
+      <p>Banana Rush is a simple 2D game, the game was built with Javascript and Phaser3 framework. Player needs to collect the bananas.</p>
+      <img src="BananaRush.png" width="320" height="320" alt="Image">
+     <p>https://dimphosethiba.github.io/Banana-Rush-Game/</p>
+
+    </div>
+    <div class="col-sm-3"> 
+
+    <h4>Login/Register</h4>
+      <p>Login and Register form were built with HTML5, MongoDB database that Creates,Reads, Update and Delete data for the database.</p>
+      <img src="Login.png" width="320" height="320" alt="Image">
+      <p></p>
+    </div>
+    <div class="col-sm-3"> 
+      <h4>T'ings you gotta do</h4>
+      <p>To do list form were built with HTML5, MongoDB database that Creates,Reads, Update and Delete data for the database.</p>
+      <img src="todolist2.png" width="320" height="320" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <h4>ChattieApp (Simple Chat App)</h4>
+      <p>This chat appication is a simple app that can be used on the browser, instantly texts with friends in the same room.</p>
+      <img src="birds3.jpg" width="320" height="320" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>&copy; Dimpho Sethiba 2018</p> 
+</footer>
+
+</body>
+</html>
